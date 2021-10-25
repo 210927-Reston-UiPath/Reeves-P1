@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ACME</title>
+    <meta name="description" content="">
+ <!--    <meta name="viewport" content="device-width, initial-scale=1"> -->
+    <link rel="stylesheet" href="site.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+
+<!-- @*-------//Store CODE BEGIN//-----------------*@ -->
+
+<body>
+            <div id="store">
+                <h2>ACME</h2>
+                <!-- @*-------//Table CODE BEGIN//--------*@-->
+                <!-- @*-------//Table Column Labels BEGIN//-------*@-->
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Image</th>
+                            <th>Price</th>
+                            <th>In Stock?</th>
+                            <th>Purchase</th>
+                        </tr>
+                    </thead>
+                    <!-- @*-------//Table Column Labels END//-------*@-->
+                    <!-- @*-------//TABLE BODY BEGINS//-------*@-->
+                    <tbody>
+                        <tr>
+                            <!--//Product Name//-->
+                            <td>Lap Top</td>
+                            <!--//Image//-->
+                            <td>
+                                <img src="https://image.shutterstock.com/image-vector/realistic-laptop-front-view-modern-600w-1911447988.jpg"
+                                    alt="shutterstock.com">
+
+                            </td>
+                            <!--/Price//-->
+                            <td>$899.95</td>
+                            <!--//In Stock//-->
+                            <td>Yes/No</td>
+                            <!--//Purchase//-->
+                            <td>
+                                <form action="/action_page.php">
+                                    <input type="number" id="quantity" name="quantity" min="1" max="100"
+                                        placeholder="Qty">
+                                    <input type="submit" value="Add To Cart">
+                                    <input type="reset" value="Reset">
+                                </form>
+                            </td>
+                        </tr>    
+                    </tbody>
+                </table>    
+            </div>
+<script src="Site.js" async defer></script>
+<!-- @*--------// Table CODE END//------------------*@ -->
+</body>
+
+</html>
