@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
 <html>
 
 <head>
@@ -23,52 +23,189 @@
 
 <body>
     <!-- @*--------// Banner CODE BEGIN//------------------*@ -->
-    <div class="header">
-        <h3 class="display-4">Welcome to </h3>
-        <h1 class="display-1">Ayres Family of Stores.</h1>
-    </div>
-    <!-- @*--------// Banner CODE END//------------------*@ -->
-    <!-- @*-------//NavBar CODE BEGIN//-----------------*@ -->
-    <div id="navbar">
-        <nav class="navbar navbar-expand">
-            <div class="container-fluid">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">L.S. Ayres</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">W.T. Grant</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">O'Mailia's</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">ACME</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-    <!-- @*--------// NavBar CODE END//------------------*@ -->
-
-    <!-- @*-------//Store CODE BEGIN//-----------------*@ -->
-    <div id="store">
-    <div class="container-fluid mt-3">
-        <div class="row w-auto bg-warning">
-            <div class="col-8 w-auto h-auto">
-                <iframe src="ACME.html" title="ACME STORE">
-                </iframe>
+    <div class="grid-container">
+        <div class="item1">
+            <h3 class="display-4">Welcome to </h3>
+            <h1 class="display-1">Ayres Family of Stores.</h1>
+        </div>
+    
+        <!-- @*-------//Store CODE BEGIN//-----------------*@ -->
+    
+        <div class="item3" style="background-color:#aaa;">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Image</th>
+                        <th>Price</th>
+                        <th>Item Number</th>
+                        <th>Purchase</th>
+                    </tr>
+                </thead>
+                <!-- @*-------//Table Column Labels END//-------*@-->
+                <!-- @*-------//TABLE BODY BEGINS//-------*@-->
+                <tbody>
+                    <tr id="WomensHoodie">
+                        <!--//Product Name//-->
+                        <td>Womens Hoodie</td>
+                        <!--//Image//-->
+                        <td>
+                            <img src="images\stock-photo-beautiful-set-of-women-s-clothes-beige-hoodie-with-long-sleeves-and-an-olive-jacket-with-a-yellow-1456929035.jpg"
+                                alt="Womens Hoodie">
+    
+                        </td>
+                        <!--/Price//-->
+                        <td class="price">$59.95</td>
+                        <!--//In Stock//-->
+                        <td class="item_num">9101</td>
+                        <!--//Purchase//-->
+                        <td>
+                            <input type="number" id="" name="" min="1" max="100" placeholder="Qty"
+                                class="form-control quantity">
+                            <input type="submit" value="Buy" class="btn btn-info" onclick="buy('Womens Hoodie')">
+                            <input type="reset" value="Reset">
+                        </td>
+                    </tr>
+                    <tr id="WomensJeans">
+                        <!--//Product Name//-->
+                        <td>Womens Jeans</td>
+                        <!--//Image//-->
+                        <td>
+                            <img src="images\stock-photo-jeans-222262066.jpg" alt="Womens Jeans">
+    
+                        </td>
+                        <!--/Price//-->
+                        <td class="price">$89.95</td>
+                        <!--//In Stock//-->
+                        <td class="item_num">9102</td>
+                        <!--//Purchase//-->
+                        <td>
+                            <input type="number" id="" name="" min="1" max="100" placeholder="Qty"
+                                class="form-control quantity">
+                            <input type="submit" value="Buy" class="btn btn-info" onclick="buy('WomensJeans')">
+                            <input type="reset" value="Reset">
+                        </td>
+                    </tr>
+                    <tr id="WomensDresses">
+                        <!--//Product Name//-->
+                        <td>Womens Dresses</td>
+                        <!--//Image//-->
+                        <td>
+                            <img src="images\stock-photo-office-and-casual-women-s-dresses-on-a-white-background-1027369255.jpg"
+                                alt="Womens Dresses">
+    
+                        </td>
+                        <!--/Price//-->
+                        <td class="price">$199.95</td>
+                        <!--//In Stock//-->
+                        <td class="item_num">9103</td>
+                        <!--//Purchase//-->
+                        <td>
+                            <input type="number" id="" name="" min="1" max="100" placeholder="Qty"
+                                class="form-control quantity">
+                            <input type="submit" value="Buy" class="btn btn-info" onclick="buy('WomensDresses')">
+                            <input type="reset" value="Reset">
+                        </td>
+                    </tr>
+                    <tr id="MensSweatshirt">
+                        <!--//Product Name//-->
+                        <td>Mens Sweatshirt</td>
+                        <!--//Image//-->
+                        <td>
+                            <img src="images\stock-photo-blank-template-mens-blue-sweatshirt-long-sleeve-front-and-back-view-isolated-on-white-background-1023462688.jpg"
+                                alt="Mens Sweatshirt">
+    
+                        </td>
+                        <!--/Price//-->
+                        <td class="price">$69.95</td>
+                        <!--//In Stock//-->
+                        <td class="item_num">9104</td>
+                        <!--//Purchase//-->
+                        <td>
+                            <input type="number" id="" name="" min="1" max="100" placeholder="Qty"
+                                class="form-control quantity">
+                            <input type="submit" value="Buy" class="btn btn-info" onclick="buy('Mens Sweatshirt')">
+                            <input type="reset" value="Reset">
+                        </td>
+                    </tr>
+                    <tr id="MensJeans">
+                        <!--//Product Name//-->
+                        <td>Mens Jeans</td>
+                        <!--//Image//-->
+                        <td>
+                            <img src="images\stock-photo-blue-men-s-jeans-in-front-and-back-views-isolated-on-white-background-casual-style-1097099450.jpg"
+                                alt="Mens Jeans">
+    
+                        </td>
+                        <!--/Price//-->
+                        <td class="price">$49.95</td>
+                        <!--//In Stock//-->
+                        <td class="item_num">9105</td>
+                        <!--//Purchase//-->
+                        <td>
+                            <input type="number" id="" name="" min="1" max="100" placeholder="Qty"
+                                class="form-control quantity">
+                            <input type="submit" value="Buy" class="btn btn-info" onclick="buy('Mens Jean')">
+                            <input type="reset" value="Reset">
+                        </td>
+                    </tr>
+                    <tr id="MensDressShirts">
+                        <!--//Product Name//-->
+                        <td>Mens Dress Shirts</td>
+                        <!--//Image//-->
+                        <td>
+                            <img src="images\stock-photo-clothes-hang-on-a-shelf-cloth-hangers-with-shirts-men-s-business-clothes-583746451.jpg"
+                                alt="Mens Dress Shirts">
+    
+                        </td>
+                        <!--/Price//-->
+                        <td class="price">$49.95</td>
+                        <!--//In Stock//-->
+                        <td class="item_num">9106</td>
+                        <!--//Purchase//-->
+                        <td>
+                            <input type="number" id="" name="" min="1" max="100" placeholder="Qty"
+                                class="form-control quantity">
+                            <input type="submit" value="Buy" class="btn btn-info" onclick="buy('Mens Dress Shirts')">
+                            <input type="reset" value="Reset">
+                        </td>
+                    </tr>
+    
+                </tbody>
+            </table>
+        </div>
+    
+        <div class="item2" style="background-color:#ccc;">
+            <!--Shopping Cart-->
+            <div class="container">
+                <div class="col">
+                    <h5>Cart</h5>
+                    <table class="table" id="cart">
+                        <thead>
+                            <th>Item</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>SubTotal</th>
+                        </thead>
+                        <tbody>
+    
+                        </tbody>
+                    </table>
+                    <button class="btn btn-secondary" onclick="checkout()">Checkout</button>
+                
+                </div>
             </div>
         </div>
-    </div>
+    
+        <div class="item4">
+            <p>Footer</p>
+        </div>
     </div>
     <!-- @*-------//Store CODE ENDS//-----------------*@ -->
-    </div>
+
 
     <script src="Site.js" async defer></script>
+
 </body>
 
 </html>
