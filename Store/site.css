@@ -2,20 +2,144 @@
 for details on configuring this project to bundle and minify static web assets. */
 @import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
 /* <!--//Site Settings//--> */
-html, body {
-  height: 100%;
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: footer; }
+
+* {
+  box-sizing: border-box;
 }
 
-/* <!--//Header Settings//--> */
-.header {
-  background-color: #8897a1;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+.item1 {
+  grid-area: header;
+  background-color: #aaa;
+  padding: 10px;
+  text-align: center;
+  font-size: 35px;
+}
+
+/* The grid container */
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+  'header header header header header header' 
+  'main main main main menu menu' 
+  'footer footer footer footer footer footer';
+  /* grid-column-gap: 10px; - if you want gap between the columns */
+} 
+
+.main,
+.menu {
+  padding: 10px;
+  height: 1600px; /* Should be removed. Only for demonstration */
+}
+
+/* Style the left column */
+.main {
+  grid-area: left;
+  padding: 20px;;
+}
+
+/* Style the right column */
+.menu {
+  grid-area: right;
   padding: 20px;
+}
+
+/* Style the footer */
+.footer {
+  grid-area: footer;
+  background-color: #f1f1f1;
+  padding: 10px;
   text-align: center;
 }
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+
 .display-1 {
   font-family: 'Italianno', cursive !important;
 }
-/* <!--//Navbar Settings//--> */
+
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+
+
+
+
+
+  /* UNUSED
+
+.content {
+  padding: 16px;
+}
+
+#store{
+  width: fit-content;
+  flex-wrap: nowrap;
+  overflow:hidden;
+}
+
+Style the side navigation
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: right;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+}
+
+Side navigation links
+.sidenav a {
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+}
+
+Change color on hover
+.sidenav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+Style the content
+.content {
+  margin-left: 200px;
+  padding-left: 20px;
+} 
+.sidenav a {
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+}
+
+Change color on hover
+.sidenav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+Style the content
+.content {
+  margin-left: 200px;
+  padding-left: 20px;
+} 
+<!--//Navbar Settings//-->
 #navbar {
   overflow: hidden;
   background-color: rgb(17, 16, 16);
@@ -26,19 +150,19 @@ html, body {
   display: block;
   color: #ffffff65;
   text-align: center;
-  padding: 15px 10px 5px;
+  padding: 10px 10px 5px;
   text-decoration: none;
   font-size: 20px;
   font-weight: 500;
 }
 
 #navbar a:hover {
-  /* background-color: #ddd; */
+  background-color: #ddd;
   color: rgb(255, 255, 255);
 }
 
 #navbar a.active {
-  /* background-color: #04AA6D; */
+  background-color: #04AA6D;
   color: white;
 }
 
@@ -55,16 +179,4 @@ html, body {
 .sticky + .content {
   padding-top: 60px;
 }
-
-#store{
-  width: fit-content;
-  flex-wrap: nowrap;
-  overflow:hidden;
-}
-
-img {
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
-  width: 150px;
-}
+  END */
